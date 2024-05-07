@@ -8,11 +8,11 @@
 
 void ex4operateurs()
 {
-    uint x;
-    uint masque;
-    uint res1;
-    uint res2;
-    uint res3;
+    ushort x;
+    ushort masque;
+    ushort res1;
+    ushort res2;
+    ushort res3;
 
     x = 0x0E2C;
 

@@ -4,6 +4,14 @@
 
 #include "ex5-tableau.h"
 #include <stdio.h>
+#include <string.h>
+
+void modifystep(int (*tab)[100], int step, int value) {
+    for (int i = 0; i < sizeof(*tab)/sizeof(int); i += step)
+    {
+        (*tab)[i] = value;
+    }
+}
 
 void ex5tableau() {
     int tab[100];
@@ -45,12 +53,5 @@ void ex5tableau() {
     for (int i = 0; i < sizeof(tab)/sizeof(int); i++)
     {
         printf("tab[%d] = %d\n", i, tab[i]);
-    }
-}
-
-void modifystep(int (*tab)[100], int step, int value) {
-    for (int i = 0; i < sizeof(*tab)/sizeof(int); i += step)
-    {
-        (*tab)[i] = value;
     }
 }

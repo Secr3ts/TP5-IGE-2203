@@ -8,4 +8,5 @@ add_executable(TP5 main.c
         ex2-min.h
         ex3-permute-simple.h
         ex4-operateurs.h
-        ex5-tableau.h)
+        ex5-tableau.h
+)
